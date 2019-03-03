@@ -1,17 +1,16 @@
 void setup() {
-  size(500,500);
+  size(800,800);
 }
 
 void draw() {  
-  fill(#FF0303);
-  ellipse(150,150,200,200); 
-  fill(#050000);
-  ellipse(150,150,160,160);
-  fill(#FF0303);
-  ellipse(150,150,120,120);
-  fill(#050000);
-  ellipse(150,150,80,80);
-  fill(#FF0303);
-  ellipse(150,150,40,40);
-  
+  for(int i=50; i<100; i++){
+        ellipse(i*1, i*2,150,150);
+    if(i%2==0){
+      fill(0,0,0);
+    }
+    else{
+      fill(#FF001E);
+    }
+    
   }
+}
